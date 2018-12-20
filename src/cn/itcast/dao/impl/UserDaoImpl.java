@@ -15,12 +15,12 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public List<User> findAll() {
-        //使用JDBC操作数据库
-
+        //使用JDBC操作数据库...
         //1.定义sql
         String sql = "select * from user";
-        List<User> users =  template.query(sql, new BeanPropertyRowMapper<>(User.class));
+        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class));
 
         return users;
     }
+
 }

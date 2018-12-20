@@ -43,7 +43,7 @@
             <th>操作</th>
         </tr>
 
-        <c:forEach items="$(users)" var="user" varStatus="s">
+        <c:forEach items="${users}" var="user" varStatus="s">
             <tr>
                 <td>${s.count}</td>
                 <td>${user.name}</td>

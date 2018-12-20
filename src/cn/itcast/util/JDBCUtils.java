@@ -3,10 +3,10 @@ package cn.itcast.util;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 
 import javax.sql.DataSource;
-import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 
@@ -50,4 +50,5 @@ public class JDBCUtils {
     public static Connection getConnection() throws SQLException {
         return  ds.getConnection();
     }
+
 }
