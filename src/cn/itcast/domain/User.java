@@ -68,14 +68,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
-                ", address='" + address + '\'' +
-                ", qq='" + qq + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return super.toString();
     }
 }
