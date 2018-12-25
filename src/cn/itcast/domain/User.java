@@ -9,6 +9,24 @@ public class User {
     private String address;
     private String qq;
     private String email;
+    private String username;
+    private String password;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public int getId() {
         return id;
@@ -68,6 +86,16 @@ public class User {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                ", qq='" + qq + '\'' +
+                ", email='" + email + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
