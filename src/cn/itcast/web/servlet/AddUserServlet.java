@@ -36,7 +36,7 @@ public class AddUserServlet extends HttpServlet {
 
 
         //挑战到UserListServlet
-        response.sendRedirect(request.getContextPath() + "/UserListServlet");
+        response.sendRedirect(request.getContextPath() + "/FindUserByPageServlet");
 
     }
 

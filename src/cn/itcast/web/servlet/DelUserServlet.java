@@ -20,13 +20,11 @@ public class DelUserServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
-        System.out.println("1111111111111");
-        System.out.println("id");
         //调用service删除
         UserService service = new UserServiceImpl();
         service.deleteUser(id);
 
         //跳转到查询所有Servlet
-        response.sendRedirect(request.getContextPath()+ "/UserListServlet");
+        response.sendRedirect(request.getContextPath()+ "/FindUserByPageServlet");
     }
 }

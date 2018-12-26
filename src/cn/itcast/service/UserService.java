@@ -3,9 +3,11 @@ package cn.itcast.service;
 //用户管理的业务接口
 
 
+import cn.itcast.domain.PageBean;
 import cn.itcast.domain.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserService {
 
@@ -47,4 +49,13 @@ public interface UserService {
      * @param ids
      */
     void delSelectedUser(String[] ids);
+
+    /**
+     * 分页条件查询
+     * @param currentPage
+     * @param rows
+     * @param condition
+     * @return
+     */
+    PageBean<User> findUserByPage(String currentPage, String rows, Map<String, String[]> condition);
 }
