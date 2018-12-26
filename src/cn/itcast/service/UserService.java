@@ -16,4 +16,16 @@ public interface UserService {
     public List<User> findAll();
 
     User login(User user);
+
+    /**
+     * 保存User
+     * @param user
+     */
+    void addUser(User user);
+
+    /**
+     * 根据id 删除
+     * @param id
+     */
+    void deleteUser(String id);
 }

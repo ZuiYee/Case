@@ -39,8 +39,6 @@ public class LoginServlet extends HttpServlet {
 
             return;
         }
-
-
         Map<String, String[]> map = request.getParameterMap();
         //4.封装User对象
         User user = new User();
