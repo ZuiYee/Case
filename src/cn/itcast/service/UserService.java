@@ -28,4 +28,17 @@ public interface UserService {
      * @param id
      */
     void deleteUser(String id);
+
+    /**
+     * 根据id 查询
+     * @param id
+     * @return
+     */
+    User findUserById(String id);
+
+    /**
+     * 修改信息
+     * @param user
+     */
+    void updateUser(User user);
 }
