@@ -30,7 +30,7 @@ public class FindUserByPageServlet extends HttpServlet {
             rows = "5";
         }
         //获取条件查询参数
-        
+
         Map<String, String[]> condition = request.getParameterMap();
 
 
@@ -42,6 +42,7 @@ public class FindUserByPageServlet extends HttpServlet {
 
         //将PageBean存入request
         request.setAttribute("pb", pb);
+        request.setAttribute("condition", condition);
         //转发到list.jsp
         request.getRequestDispatcher("/list.jsp").forward(request, response);
 
