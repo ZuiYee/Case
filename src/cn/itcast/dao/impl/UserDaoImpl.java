@@ -115,7 +115,6 @@ public class UserDaoImpl implements UserDao {
 
             //获取value
             String value = condition.get(key)[0];
-            System.out.println("value:" + value);
             //判断value是否有值
             if(value != null && !"".equals(value)){
                 sb.append(" and " + key + " like ? ");
