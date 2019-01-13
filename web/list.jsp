@@ -147,7 +147,6 @@
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-
                 <c:forEach begin="1" end="${pb.totalPage}" var="i">
                     <c:if test="${pb.currentPage == i}">
                         <li class="active"><a href="${pageContext.request.contextPath}/FindUserByPageServlet?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a> </li>
