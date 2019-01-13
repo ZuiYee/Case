@@ -88,7 +88,6 @@
                 <label for="exampleInputName3">籍贯</label>
                 <input type="text" name="address" value="${condition.address[0]}" class="form-control" id="exampleInputName3" >
             </div>
-
             <div class="form-group">
                 <label for="exampleInputEmail2">邮箱</label>
                 <input type="text" name="email" value="${condition.email[0]}" class="form-control" id="exampleInputEmail2"  >
