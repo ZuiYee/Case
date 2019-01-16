@@ -33,8 +33,7 @@ public class AddUserServlet extends HttpServlet {
         //调用service保存
         UserService service = new UserServiceImpl();
         service.addUser(user);
-
-
+        
         //挑战到UserListServlet
         response.sendRedirect(request.getContextPath() + "/FindUserByPageServlet");
 
