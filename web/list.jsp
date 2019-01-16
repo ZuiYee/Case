@@ -78,7 +78,6 @@
     <h3 style="text-align: center">用户信息列表</h3>
 
     <div style="float: left;">
-
         <form class="form-inline" action="${pageContext.request.contextPath}/FindUserByPageServlet" method="post">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
