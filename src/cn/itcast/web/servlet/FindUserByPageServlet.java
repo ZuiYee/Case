@@ -34,7 +34,6 @@ public class FindUserByPageServlet extends HttpServlet {
         Map<String, String[]> condition = request.getParameterMap();
 
 
-
         //调用service查询
         UserService service = new UserServiceImpl();
         PageBean<User> pb = service.findUserByPage(currentPage, rows, condition);
