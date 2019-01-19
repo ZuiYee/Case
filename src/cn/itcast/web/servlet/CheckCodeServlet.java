@@ -51,7 +51,6 @@ public class CheckCodeServlet extends HttpServlet {
 		g.setFont(new Font("黑体",Font.BOLD,24));
 		//向图片上写入验证码
 		g.drawString(checkCode,15,25);
-		
 		//将内存中的图片输出到浏览器
 		//参数一：图片对象
 		//参数二：图片的格式，如PNG,JPG,GIF

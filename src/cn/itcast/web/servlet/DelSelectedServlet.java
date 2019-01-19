@@ -17,7 +17,6 @@ public class DelSelectedServlet extends HttpServlet {
 
         UserService service = new UserServiceImpl();
         service.delSelectedUser(ids);
-
         response.sendRedirect(request.getContextPath() + "/FindUserByPageServlet");
     }
 
